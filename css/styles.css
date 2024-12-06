@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+:root{
+
+    --font-exo:"Exo", sans-serif;
+    
+    --font-color-violet-dark-001:#10002b;
+    --font-color-violet-dark-002:#240046;
+    --font-color-violet-dark-003:#3c096c;
+    --font-color-violet-medium-001:#5a189a;
+    --font-color-violet-medium-002:#7b2cbf;
+    --font-color-violet-medium-003:#9d4edd;
+    --font-color-violet-light-001:#c77dff;
+    --font-color-violet-light-002:#e0aaff;
+
+    --font-size-18pt:16px;
+    --font-size-30pt:24px;
+    --font-size-49pt:55px;
+
+    --font-weight-regular:400;
+    --font-weight-bold:700;
+
+
+}
+
+*{
+    font-family: var(--font-exo);
+
+   
+    body{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+        width: 100vw;
+        height:100vh;
+    }
+}
+
+
+header{
+    background-color: var(--font-color-violet-dark-001);
+    color: var(--font-color-violet-light-001);
+    padding:0.1em 0em;
+    position:relative;
+   z-index: 10;
+   display: flex;
+   flex-direction: row;
+   width:100vw;
+}
+
+
+nav{
+    background-color: var(--font-color-violet-dark-002);
+    color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:0.5em 0em;
+    position:relative;
+    z-index: 10;
+    width: 100vw;
+    
+}
+.logo{
+    width:10%;
+    border:1px solid yellow;
+}
+.logo>img{
+    width: 8em;
+}
+.menu{
+    width:70%;
+    border:1px solid yellow;
+}
+
+.links{
+    width: 30%;
+    border:1px solid yellow;
+}
+nav>ul{
+    display: flex;
+    flex-direction: row;
+
+}
+nav>ul>li{
+    padding:0.5em 1em;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: var(--font-color-violet-light-001);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.hero-video{
+    
+    display: flex;
+    justify-content: center;
+    border-color:2px solid yellow;
+}
+
+.hero-video>video{
+    position: relative;
+    top: -150px;
+}

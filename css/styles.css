@@ -5,14 +5,11 @@
 
     --font-exo:"Exo", sans-serif;
     
-    --font-color-violet-dark-001:#10002b;
-    --font-color-violet-dark-002:#240046;
-    --font-color-violet-dark-003:#3c096c;
-    --font-color-violet-medium-001:#5a189a;
-    --font-color-violet-medium-002:#7b2cbf;
-    --font-color-violet-medium-003:#9d4edd;
-    --font-color-violet-light-001:#c77dff;
-    --font-color-violet-light-002:#e0aaff;
+    --color-blue-dark-001:#01326c;
+    --color-blue-dark-002:#0066cb;
+    --color-blue-medium:#47a1f7;
+    --color-blue-light:#8cd3ff;
+    --color-green:#248c35;
 
     --font-size-18pt:16px;
     --font-size-30pt:24px;
@@ -39,9 +36,7 @@
 
 
 header{
-    background-color: var(--font-color-violet-dark-001);
-    color: var(--font-color-violet-light-001);
-    padding:0.1em 0em;
+    background-color: black;
     position:relative;
    z-index: 10;
    display: flex;
@@ -51,15 +46,16 @@ header{
 
 
 nav{
-    background-color: var(--font-color-violet-dark-002);
-    color:white;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     padding:0.5em 0em;
     position:relative;
     z-index: 10;
-    width: 100vw;
+    width: 90vw;
     
 }
 .logo{
@@ -72,25 +68,37 @@ nav{
 .menu{
     width:70%;
     border:1px solid yellow;
+
 }
 
 .links{
-    width: 30%;
+    width: 20%;
     border:1px solid yellow;
 }
-nav>ul{
+.links>ul{
+
     display: flex;
     flex-direction: row;
+    
+}
+.menu>ul{
+    display: flex;
+    flex-direction: row;
+  justify-content: center;
+  background-color: transparent;
 
 }
-nav>ul>li{
+.menu>ul>li{
     padding:0.5em 1em;
+    background-color: transparent;
 }
-nav>ul>li>a{
+.menu>ul>li>a{
     text-decoration: none;
-    color: var(--font-color-violet-light-001);
+    color: var(--color-blue-dark-002);
+    font-size: 1.2em;
     text-transform: uppercase;
     font-weight: 700;
+    background-color: transparent;
 }
 
 .hero-video{
